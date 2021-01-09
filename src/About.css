@@ -1,0 +1,8 @@
+.profile-pic {
+    float: right;
+    height: 90px;
+    width: 90px;
+    display: block;
+    border-radius: 50%;
+    margin: auto auto auto 16px ;
+  }

@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  background-color: '#f5f5f5';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  overflow: visible;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p, h1, li {
+  font-family: 'Inconsolata';
 }
 
-.App-link {
-  color: #61dafb;
+.content-top {
+  margin:  5% 20% 0% 20%;
+  max-width: 750px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  margin:  3% 20% 15%;
+  max-width: 750px;
+}
+
+a {
+  color: #bd1c1c !important;
+}
+
+
+/* inconsolata-regular - latin */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/inconsolata-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./assets/fonts/inconsolata-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/inconsolata-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/inconsolata-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/inconsolata-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/inconsolata-v20-latin-regular.svg#Inconsolata') format('svg'); /* Legacy iOS */
+}
+/* inconsolata-700 - latin */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/inconsolata-v20-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./assets/fonts/inconsolata-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/inconsolata-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/inconsolata-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/inconsolata-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/inconsolata-v20-latin-700.svg#Inconsolata') format('svg'); /* Legacy iOS */
 }

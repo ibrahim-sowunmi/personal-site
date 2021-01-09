@@ -1,0 +1,21 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.navBar a:hover {
+  text-decoration: underline;
+}
+
+.nav-brand a {
+  justify-content: flex-start;
+  color: black !important;
+  font-size: 2rem;
+}
+
+.nav-links a {
+  margin-left: auto;
+}
