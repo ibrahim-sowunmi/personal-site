@@ -14,15 +14,12 @@ function App() {
           <Navbar />
         </div>
         <hr></hr>
-        <div className="content">
           <Switch>
             <Route exact path="/" component={About} />
             <Route path="/blog" component={Blog} />
             <Route path="/art" component={Art} />
           </Switch>
-        </div>
       </div>
-      ;
     </BrowserRouter>
   );
 }
