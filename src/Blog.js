@@ -11,7 +11,7 @@ function Blog() {
       <div className="nav-links">
         <ul>
         <li>
-            <NavLink to="/blog/3">Short finance advice piece</NavLink>
+            <NavLink to="/blog/3">101 Schmoney advice</NavLink>
           </li>
           <li>
             <NavLink to="/blog/2">Search for SEO </NavLink>

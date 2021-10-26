@@ -5,14 +5,14 @@ import { Text } from "@chakra-ui/react";
 
 function About() {
   return (
-    <div className="content">
+    <div className="content" style={{ lineHeight: "140%" }}>
       <img className="profile-pic" alt="Ibrahim Sowunmi" src={img} />
       <p>
-        I'm a 23 year old Student based in{" "}
-        <a href="https://en.wikipedia.org/wiki/Manchester"> Manchester</a>.
+        I'm a 24 year old Solution Engineer based in based in{" "}
+        <a href="https://en.wikipedia.org/wiki/Dublin"> Dublin</a>.
         <br></br>
         <br></br>
-        Final year, pursuing a BSc in{" "}
+        Prior to that I completed a BSc in {" "}
         <span className="highlight">
           <b>Computer Science with Human-computer Interaction</b>
         </span>{" "}
@@ -20,9 +20,9 @@ function About() {
         <a href="https://www.manchester.ac.uk/">
           {" "}
           The University of Manchester
-        </a>
-        , graduating in 2021. Passionate about problem-solving and intuitive
-        design, with a burgeoning interest in devOps.
+        </a>.
+        <br></br>
+        Passionate about problem-solving and intuitive design.
       </p>
       <br></br>
       <p>
@@ -30,7 +30,7 @@ function About() {
         like geopolitics, finance, sustainability, digital art, software
         engineering, privacy, technology, etc. When I'm not doing something
         related to those, I'm likely working through my{" "}
-        <a href="https://www.goodreads.com/review/list/91646908?ref=nav_mybooks">
+        <a href="https://www.goodreads.com/review/list/91646908-ibrahim-sowunmi?ref=nav_mybooks&shelf=read">
           reading list
         </a>{" "}
         or drawing.
@@ -38,8 +38,8 @@ function About() {
       <br></br>
       <p>
         <b>Current Read: </b>
-        <a href="https://www.goodreads.com/book/show/40876575-utopia-for-realists?ac=1&from_search=true&qid=dgP87czMVv&rank=1">
-          Utopia for Realists
+        <a href="https://www.goodreads.com/review/list/91646908-ibrahim-sowunmi?ref=nav_mybooks&shelf=currently-reading">
+          A few books
         </a>
       </p>
       <br></br>
@@ -54,6 +54,7 @@ function About() {
         </a>
       </p>
       <p>This website is works via S3, Route53 & React...</p>
+
       <br></br>
       <Text
         bgGradient="linear(to-l, #7928CA,#FF0080)"
@@ -62,10 +63,15 @@ function About() {
       >
         <p style={{ textAlign: "center" }}>\ (•◡•) /</p>
       </Text>
+      <br></br>
       <p>
         View my&nbsp;
         <a href="https://www.linkedin.com/in/ibrahim-sowunmi/?originalSubdomain=uk">
           LinkedIn
+        </a>
+        ,
+        <a href="https://trailblazer.me/id/isowunmi">
+          Trailhead
         </a>
         &nbsp;or&nbsp;
         <a href="https://github.com/ibrahim-sowunmi">

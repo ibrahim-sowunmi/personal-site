@@ -13,7 +13,13 @@ function Navbar() {
             bgClip="text"
             fontWeight="extrabold"
           >
-            <NavLink to="/">Ibrahim Sowunmi</NavLink>
+            <NavLink to="/" style={{ textDecoration: "none" }}> <Text
+              bgGradient="linear(to-l, #7928CA,#FF0080)"
+              bgClip="text"
+              fontWeight="extrabold"
+            >
+              Ibrahim Sowunmi
+            </Text></NavLink>
           </Text>
         </Heading>
       </div>
