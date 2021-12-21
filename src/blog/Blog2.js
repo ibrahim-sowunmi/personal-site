@@ -1,12 +1,12 @@
-import React from "react";
-import img1 from "./assets/blog2-1.png";
-import img2 from "./assets/blog2-2.png";
-import img3 from "./assets/blog2-3.png";
+import React from 'react'
+import img1 from '../assets/blog/blog2/blog2-1.png'
+import img2 from '../assets/blog/blog2/blog2-2.png'
+import img3 from '../assets/blog/blog2/blog2-3.png'
 
 function Blog2() {
   return (
     <>
-      <h2>Search for SEO - 10/01/21</h2>
+      <h2>SEO Ranking for - 10/01/21</h2>
       <hr></hr>
       <br></br>
       <p>Hello Reader,</p>
@@ -35,7 +35,7 @@ function Blog2() {
       <p>
         <b>How do I fix this? SEO.</b> “Search engine optimization”, improving
         my site to increase its visibility to the algorithm. Awesome, so how do
-        I improve this? I wasn’t really sure, so I googled tools to measure the
+        I improve this? I wasn’t really sure. So I googled tools to measure the
         SEO-ability of my site
       </p>
       <p>&nbsp;</p>
@@ -89,7 +89,7 @@ function Blog2() {
         entire Internet, figuring out which sites were linked to the most. The
         sites with the most links were, theoretically, the best sites. And if
         you did a search for “university,” they could look at the pages that
-        talked about “university” and rank them. Pretty cool story.{" "}
+        talked about “university” and rank them. Pretty cool story.{' '}
       </p>
       <p>&nbsp;</p>
       <p>
@@ -120,7 +120,7 @@ function Blog2() {
         </a>
       </p>
     </>
-  );
+  )
 }
 
-export default Blog2;
+export default Blog2

@@ -1,10 +1,14 @@
-import React from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
-import Navbar from "./Navbar.js";
-import Art from "./Art";
-import Blog from "./Blog";
-import About from "./About";
-import "./App.css";
+import React from 'react'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
+
+import Navbar from './components/Navbar/Navbar'
+import Art from './pages/Art/Art'
+import Blog from './pages/BlogList/BlogList'
+import Content from './pages/Content/ContentList'
+import About from './pages/About/About'
+import PageNotFound from './pages/404/404'
+
+import './App.css'
 
 function App() {
   return (
@@ -14,14 +18,16 @@ function App() {
           <Navbar />
         </div>
         <hr></hr>
-          <Switch>
-            <Route exact path="/" component={About} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/art" component={Art} />
-          </Switch>
+        <Switch>
+          <Route exact path="/" component={About} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/art" component={Art} />
+          <Route path="/content" component={Content} />
+          <Route component={PageNotFound} />
+        </Switch>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
