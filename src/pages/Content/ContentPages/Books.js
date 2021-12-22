@@ -2,6 +2,8 @@ import React from 'react'
 import Book from '../../../components/Book/Book.js'
 import Spacer from '../../../components/Utility/Spacer.js'
 
+import { SimpleGrid } from '@chakra-ui/react'
+
 import './Books.css'
 
 import book1 from '../../../assets/books/book1.jpg'
@@ -54,7 +56,7 @@ function Books() {
   return (
     <>
       <div>
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book1}
             title="The Hitchhiker's Guide to the Galaxy"
@@ -96,9 +98,9 @@ function Books() {
               'https://www.goodreads.com/book/show/386162.The_Hitchhiker_s_Guide_to_the_Galaxy'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book4}
             title="I, Robot"
@@ -141,9 +143,9 @@ function Books() {
               'https://www.goodreads.com/book/show/17601.The_Will_to_Change'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book7}
             title="The Player of Games"
@@ -190,9 +192,9 @@ function Books() {
               'https://www.goodreads.com/book/show/40876575-utopia-for-realists'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book10}
             title="A Clockwork Orange"
@@ -236,9 +238,9 @@ function Books() {
               'https://www.goodreads.com/book/show/40242274-a-random-walk-down-wall-street'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book14}
             title="The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns"
@@ -280,9 +282,9 @@ function Books() {
               'https://www.goodreads.com/book/show/18693655-a-mind-for-numbers'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book17}
             title="The Handmaid's Tale"
@@ -323,9 +325,9 @@ function Books() {
             Drawing on vast new data that reveal Americans' changing behavior, Putnam shows how we have become increasingly disconnected from one another and how social structures--whether they be PTA, church, or political parties--have disintegrated. Until the publication of this groundbreaking work, no one had so deftly diagnosed the harm that these broken bonds have wreaked on our physical and civic health, nor had anyone exalted their fundamental power in creating a society that is happy, healthy, and safe."
             link={'https://www.goodreads.com/book/show/478.Bowling_Alone'}
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book20}
             title="The Accidental Superpower"
@@ -368,9 +370,9 @@ function Books() {
               'https://www.goodreads.com/book/show/18373.Flowers_for_Algernon'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book23}
             title="Man's Search for Meaning"
@@ -416,9 +418,9 @@ function Books() {
               'https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book26}
             title="Morning Star"
@@ -460,9 +462,9 @@ function Books() {
             review="This is a pretty good book, read when I was depressed"
             link={'https://www.goodreads.com/book/show/15839976-red-rising'}
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book29}
             title="Brave New World"
@@ -500,9 +502,9 @@ function Books() {
             review="Yet again. Another well written good read from sowell. Painting opinions as absolute truths is this boooks but he's smarter than me so fair enough. Decent read."
             link={'https://www.goodreads.com/book/show/3023.Basic_Economics'}
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book33}
             title="The Way of the Superior Man: A Spiritual Guide to Mastering the Challenges of Women, Work, and Sexual Desire"
@@ -552,9 +554,9 @@ function Books() {
               'https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book37}
             title="Rich Dad, Poor Dad"
@@ -593,9 +595,9 @@ function Books() {
               'https://www.goodreads.com/book/show/97642.No_More_Mr_Nice_Guy'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book42}
             title="Prisoners of Geography: Ten Maps That Tell You Everything You Need to Know About Global Politics"
@@ -645,9 +647,9 @@ function Books() {
               'https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book46}
             title="Sapiens: A Brief History of Humankind"
@@ -695,9 +697,9 @@ function Books() {
               'https://www.goodreads.com/book/show/30186948-think-and-grow-rich'
             }
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
-        <div className="shelf">
+        <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book50}
             title="How to Win Friends and Influence People"
@@ -745,7 +747,7 @@ function Books() {
             topPick={true}
             link={'https://www.goodreads.com/book/show/34890015-factfulness'}
           />
-        </div>
+        </SimpleGrid>
         <Spacer />
       </div>
     </>

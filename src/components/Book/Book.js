@@ -14,6 +14,8 @@ import {
   useDisclosure,
   ButtonGroup,
   Wrap,
+  Text,
+  Flex,
 } from '@chakra-ui/react'
 
 function Book(props) {
@@ -22,9 +24,13 @@ function Book(props) {
   return (
     <>
       <div className="book">
-        <Box
+        <Flex
+          direction="column"
+          align="center"
+          justify="center"
           as="button"
-          width="12em"
+          m="10px"
+          marginTop="15px"
           transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
           _active={{
             bg: '#dddfe2',
@@ -40,25 +46,27 @@ function Book(props) {
           textAlign="center"
         >
           <img className="book-img" src={props.img} alt={props.title} />
-          <h1>{props.title}</h1>
-          <p>{props.author}</p>
-          <ButtonGroup variant="outline">
-            <Wrap justify="center">
-              {props.topPick ? (
-                <Button
-                  color="white"
-                  bgGradient={'linear(to-l, #7928CA,#FF0080)'}
-                  size="xs"
-                >
-                  Top Pick
-                </Button>
-              ) : null}
-              {props.genre.map((genre, index) => (
-                <Button size="xs">{genre}</Button>
-              ))}
-            </Wrap>
-          </ButtonGroup>
-        </Box>
+          <Text w="12em">{props.title}</Text>
+          <Text w="12em">{props.author}</Text>
+          <Box p={2}>
+            <ButtonGroup variant="outline">
+              <Wrap justify="center">
+                {props.topPick ? (
+                  <Button
+                    color="white"
+                    bgGradient={'linear(to-l, #7928CA,#FF0080)'}
+                    size="xs"
+                  >
+                    Top Pick
+                  </Button>
+                ) : null}
+                {props.genre.map((genre, index) => (
+                  <Button size="xs">{genre}</Button>
+                ))}
+              </Wrap>
+            </ButtonGroup>
+          </Box>
+        </Flex>
 
         <Modal isOpen={isOpen} onClose={onClose} size={'full'}>
           <ModalOverlay />
@@ -66,22 +74,19 @@ function Book(props) {
             <ModalHeader>{props.title}</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
-              <div className="book">
-                <img className="book-img" src={props.img} alt={props.title} />
-                <div className="book-info">
-                  <p>{props.author}</p>
-                  <p>&nbsp;</p>
-                  <p>{props.description}</p>
-                  <p>&nbsp;</p>
-                  <p>
-                    I gave it a <b>{props.rating} out of 10</b> rating
-                  </p>
-                  <p>&nbsp;</p>
-                  <p>{props.review}</p>
-                  <p>&nbsp;</p>
-                  <p>Read: {props.dateCompleted}</p>
-                  {}
-                </div>
+              <img className="book-img" src={props.img} alt={props.title} />
+              <div className="book-info">
+                <p>{props.author}</p>
+                <p>&nbsp;</p>
+                <p>{props.description}</p>
+                <p>&nbsp;</p>
+                <p>
+                  I gave it a <b>{props.rating} out of 10</b> rating
+                </p>
+                <p>&nbsp;</p>
+                <p>{props.review}</p>
+                <p>&nbsp;</p>
+                <p>Read: {props.dateCompleted}</p>
               </div>
             </ModalBody>
 
