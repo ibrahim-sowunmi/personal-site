@@ -28,10 +28,12 @@ function Navbar() {
       </div>
       <div className="nav-links">
         <NavLink to="/blog">Blog</NavLink>
-        <span style={{ margin: '0 8px' }}>/</span>
+        <span style={{ margin: '0 8px', color: '#D8D0D9' }}>/</span>
         <NavLink to="/art">Art</NavLink>
-        <span style={{ margin: '0 8px' }}>/</span>
-        <NavLink to="/content">Content I Like</NavLink>
+        <span style={{ margin: '0 8px', color: '#D8D0D9' }}>/</span>
+        <NavLink to="/content">Media</NavLink>
+        {/* <span style={{ margin: '0 8px', color: '#D8D0D9' }}>/</span>
+        <NavLink to="/photosets">Photosets</NavLink> */}
       </div>
     </nav>
   )

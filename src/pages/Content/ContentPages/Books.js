@@ -2,7 +2,7 @@ import React from 'react'
 import Book from '../../../components/Book/Book.js'
 import Spacer from '../../../components/Utility/Spacer.js'
 
-import { SimpleGrid } from '@chakra-ui/react'
+import { SimpleGrid, Text } from '@chakra-ui/react'
 
 import './Books.css'
 
@@ -56,6 +56,12 @@ function Books() {
   return (
     <>
       <div>
+        <Text align="center" p="10">
+          The intended purpose of this page is books I've read and content I'm
+          just generally a big fan of. Very much "Work in Progress". I don't
+          have a CMS yet, so updating this is lowkey pain.
+        </Text>
+        <Spacer />
         <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book1}
@@ -194,6 +200,13 @@ function Books() {
           />
         </SimpleGrid>
         <Spacer />
+        <Text align="center" p="10">
+          I've also read a lot of books that I've found good and not listed.
+          They're all east asian fantasy. Machine or manually translated and
+          usually horribly written with repetitive storylines but we all have
+          our vices.
+        </Text>
+        <Spacer />
         <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
             img={book10}
@@ -283,6 +296,11 @@ function Books() {
             }
           />
         </SimpleGrid>
+        <Spacer />
+        <Text align="center" p="10">
+          I've tried to intersperse the occasional self-helpy, educational book
+          here and there.
+        </Text>
         <Spacer />
         <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
@@ -419,6 +437,11 @@ function Books() {
             }
           />
         </SimpleGrid>
+        <Spacer />
+        <Text align="center" p="10">
+          This 2018 period was when I made a conscious decision to up my
+          knowledge game and become an active reader. I read a lot of books.
+        </Text>
         <Spacer />
         <SimpleGrid columns={[1, 3]} spacingX={['0px', '25px']} align="center">
           <Book
@@ -748,6 +771,12 @@ function Books() {
             link={'https://www.goodreads.com/book/show/34890015-factfulness'}
           />
         </SimpleGrid>
+        <Spacer />
+        <Text align="center" p="10">
+          Then there’s a ton of YA novels I've read before that. A few mentions
+          would be the Harry Potter Series, Game of Thrones, Eragon Series and
+          various other novels I've read and forgotten about.
+        </Text>
         <Spacer />
       </div>
     </>

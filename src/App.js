@@ -6,6 +6,7 @@ import Art from './pages/Art/Art'
 import Blog from './pages/BlogList/BlogList'
 import Content from './pages/Content/ContentList'
 import About from './pages/About/About'
+import Photosets from './pages/Photosets/Photosets'
 import PageNotFound from './pages/404/404'
 
 import './App.css'
@@ -23,6 +24,7 @@ function App() {
           <Route path="/blog" component={Blog} />
           <Route path="/art" component={Art} />
           <Route path="/content" component={Content} />
+          <Route path="/photosets" component={Photosets} />
           <Route component={PageNotFound} />
         </Switch>
       </div>
